@@ -1,5 +1,5 @@
-nameOverride: coor
-containerName: coor
+nameOverride: coor-test
+containerName: coor-test
 
 replicaCount: 1
 

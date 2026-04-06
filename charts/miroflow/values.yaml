@@ -1,5 +1,5 @@
-nameOverride: miro
-containerName: miro
+nameOverride: miro-test
+containerName: mmiro-test
 
 replicaCount: 1
 

@@ -1,5 +1,5 @@
-nameOverride: web
-containerName: web
+nameOverride: web-test
+containerName: web-test
 
 replicaCount: 1
 
