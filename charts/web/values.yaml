@@ -1,0 +1,23 @@
+nameOverride: web
+containerName: web
+
+replicaCount: 1
+
+image:
+  repository: 192.168.0.43:5000/cooragent/web
+  tag: v11
+  pullPolicy: IfNotPresent
+
+imagePullSecrets:
+  - barbor
+
+envFromSecret: web-env
+env: []
+
+service:
+  type: ClusterIP
+  name: web-service
+  port: 3000
+  targetPort: 3000
+  sessionAffinity: ClientIP
+  clientIPTimeoutSeconds: 86400

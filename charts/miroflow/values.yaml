@@ -1,0 +1,23 @@
+nameOverride: miro
+containerName: miro
+
+replicaCount: 1
+
+image:
+  repository: 192.168.0.43:5000/cooragent/miroflow
+  tag: v2
+  pullPolicy: IfNotPresent
+
+imagePullSecrets:
+  - barbor
+
+envFromSecret: miro-env
+env: []
+
+service:
+  type: ClusterIP
+  name: miro-service
+  port: 8000
+  targetPort: 8000
+  sessionAffinity: None
+  clientIPTimeoutSeconds: null

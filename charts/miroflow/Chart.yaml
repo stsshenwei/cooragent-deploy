@@ -1,0 +1,6 @@
+apiVersion: v2
+name: miroflow
+description: Helm chart for cooragent miroflow service
+type: application
+version: 0.1.0
+appVersion: "v2"
