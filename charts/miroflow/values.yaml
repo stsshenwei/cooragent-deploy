@@ -5,7 +5,7 @@ replicaCount: 1
 
 image:
   repository: 192.168.0.43:5000/cooragent/miroflow
-  tag: v4
+  tag: 3-a89a129
   pullPolicy: IfNotPresent
 
 imagePullSecrets:
