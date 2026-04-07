@@ -1,9 +1,9 @@
 defaultNamespace: cooragent
 
-# Fleet will discover Helm charts under charts/* automatically.
-# Jenkins only needs to update the image.tag in each chart values.yaml and push.
 helm:
   charts:
-    - chart: ./charts/miroflow
-      releaseName: miroflow
-
+    - chart: istio
+      repo: https://dp.apps.rancher.io
+      version: 1.18.2
+      releaseName: istio
+      secretName: helm-repo-secret
