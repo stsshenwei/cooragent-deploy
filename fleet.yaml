@@ -1,9 +1,7 @@
-defaultNamespace: cooragent
-
+namespace: cooragent
 helm:
-  charts:
-    - chart: istio
-      repo: https://dp.apps.rancher.io
-      version: 1.18.2
-      releaseName: istio
-      secretName: helm-repo-secret
+  chart: miroflow
+  path: charts/miroflow
+  version: 0.1.0
+commit:
+  interval: 1m
