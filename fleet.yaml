@@ -1,1 +1,4 @@
 defaultNamespace: cooragent
+helm:
+  releaseName: miroflow
+  chart: ./charts/miroflow
